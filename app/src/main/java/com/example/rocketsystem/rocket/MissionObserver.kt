@@ -1,5 +1,5 @@
 package com.example.rocketsystem.rocket
 
-interface MissionObserver {
-    fun onLaunchSuccess()
+fun interface MissionObserver {
+    fun onLaunchSuccess(): Boolean
 }

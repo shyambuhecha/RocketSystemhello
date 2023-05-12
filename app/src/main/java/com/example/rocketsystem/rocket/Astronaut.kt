@@ -1,13 +1,9 @@
 package com.example.rocketsystem.rocket
 
-class Astronaut(private val name: String) {
+@JvmInline
+value class Astronaut(private val nameOfAstronaut: String) {
     fun performPreLaunchChecklist() {
-        println("$name is performing pre-launch checklist...")
+        println("$nameOfAstronaut is performing pre-launch check....")
 
-        repeat(5) { i ->
-            Thread.sleep(500)
-            print(".")
-        }
-        println("\n$name has completed the pre-launch checklist!")
     }
 }
